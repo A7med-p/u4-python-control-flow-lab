@@ -163,23 +163,23 @@ weather_advice()
 # - Adjust the season based on the day of the month when needed.
 # - Ensure to validate input formats and handle unexpected inputs gracefully.
 
-# def determine_season():
-#     # Your control flow logic goes here
-#   month = input('Enter the month of the year (Jan - Dec):').lower()
-#   day = input('Enter the day of the month: ')
-#   if day.isdigit():
-#     day=int(day)
-#     if month in ('dec','jan','feb') or (month == 'mar' and day <= 19):
-#         season = 'Winter'
-#     elif month in ('mar','apr','may') or (month == 'jun' and day <= 20):
-#         season = 'Spring'
-#     elif month in ('jun','jul','aug') or (month == 'sep' and day <= 21):
-#         season = 'Summer'
-#     elif month in ('sep','oct','nov') or (month == 'dec' and day <= 20):
-#         season = 'Fall'
-#     print(f"{month.capitalize()} {day} is in {season}.")
-# # Call the function
-# determine_season()
+def determine_season():
+    # Your control flow logic goes here
+  month = input('Enter the month of the year (Jan - Dec):').lower()
+  day = input('Enter the day of the month: ')
+  if day.isdigit():
+    day=int(day)
+    if month in ('dec','jan','feb') or (month == 'mar' and day <= 19):
+        season = 'Winter'
+    elif month in ('mar','apr','may') or (month == 'jun' and day <= 20):
+        season = 'Spring'
+    elif month in ('jun','jul','aug') or (month == 'sep' and day <= 21):
+        season = 'Summer'
+    elif month in ('sep','oct','nov') or (month == 'dec' and day <= 20):
+        season = 'Fall'
+    print(f"{month.capitalize()} {day} is in {season}.")
+# Call the function
+determine_season()
 
 
 # Exercise 6: Number Guessing Game
